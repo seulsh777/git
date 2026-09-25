@@ -14,3 +14,21 @@ navigation?.addEventListener('click', (event) => {
     menuButton?.setAttribute('aria-label', '打开导航菜单');
   }
 });
+
+const bookingForm = document.querySelector('#booking-form');
+const bookingStatus = bookingForm?.querySelector('.booking-status');
+
+bookingForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (!bookingForm.checkValidity()) {
+    bookingForm.reportValidity();
+    return;
+  }
+
+  bookingStatus.textContent = '当前为本地预览，信息尚未发送；接入预约后台后即可正式提交。';
+});
+
+bookingForm?.addEventListener('input', () => {
+  bookingStatus.textContent = '';
+});
