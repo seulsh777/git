@@ -120,6 +120,8 @@ img { display: block; max-width: 100%; }
 .booking-intro > span { color: var(--coral); font-size: .78rem; font-weight: 800; letter-spacing: .12em; }
 .booking-intro strong { display: block; margin-top: .15rem; font-size: 1.25rem; }
 .booking-intro p { margin: .2rem 0 0; color: var(--muted); font-size: .82rem; }
+.owner-phone { display: inline-block; margin-top: .45rem; color: var(--coral-dark); font-size: .86rem; font-weight: 700; }
+.owner-phone:hover { text-decoration: underline; }
 .booking-form label { min-width: 0; }
 .booking-form label > span { display: block; margin: 0 0 .45rem .2rem; color: var(--muted); font-size: .78rem; font-weight: 700; }
 .booking-form input { width: 100%; min-height: 52px; padding: .75rem 1rem; border: 1px solid var(--line); border-radius: 14px; color: var(--navy); background: var(--cream); font: inherit; font-size: 1rem; outline: none; }
